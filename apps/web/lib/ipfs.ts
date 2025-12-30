@@ -73,7 +73,12 @@ export async function fetchMetadataFromIPFS(cidOrHash: string): Promise<DealMeta
 
       try {
         const data = await pinata.gateways.get(cidOrHash);
-        return data.data as DealMetadata;
+        // Ensure data is a plain object (not Blob, string, etc)
+        if (data.data && typeof data.data === 'object' && !Array.isArray(data.data)) {
+          // Two-step type assertion: first to unknown, then to DealMetadata
+          return data.data as unknown as DealMetadata;
+        }
+        throw new Error("Invalid data format from Pinata");
       } catch (pinataError) {
         console.warn("Pinata gateway fetch failed, trying public gateway:", pinataError);
       }

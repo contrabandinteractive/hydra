@@ -30,8 +30,8 @@ Built for the MNEE Hackathon.
 
 | Network | Address | MNEE Token Used | Status |
 | ------- | ------- | --------------- | ------ |
-| Sepolia | `0xbB656c7774f2E1b81f72A2eBdDdFe2557290a6AB` | MockMNEE | **Current** - For testing |
-| Mainnet | *Not deployed* | Official MNEE | Deploy for hackathon |
+| Sepolia | `0xbB656c7774f2E1b81f72A2eBdDdFe2557290a6AB` | MockMNEE | Testing |
+| Mainnet | `0xB4DF502B0b964a481253B034Ad3d2b25cCeF2869` | Official MNEE | **LIVE** ✅ |
 
 **Environment Variables:**
 - `NEXT_PUBLIC_SEPOLIA_FACTORY_ADDRESS` - Set in `apps/web/.env.local`

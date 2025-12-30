@@ -169,7 +169,7 @@ cidToBytes32(cid: string): `0x${string}`
 
 | Contract | Address | Notes |
 |----------|---------|-------|
-| CollabDealFactory | *Not deployed yet* | Will use official MNEE token |
+| CollabDealFactory | `0xB4DF502B0b964a481253B034Ad3d2b25cCeF2869` | **DEPLOYED** - Uses official MNEE token |
 | MNEE Token (Official) | `0x8ccedbAe4916b79da7F3F612EfB2EB93A2bFD6cF` | **Required for hackathon** |
 
 ## MNEE Token Addresses
