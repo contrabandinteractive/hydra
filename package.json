@@ -1,0 +1,18 @@
+{
+  "name": "hydra",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Collab Checkout with programmable recoup-first payment splits using MNEE",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "test:contracts": "cd packages/contracts && forge test",
+    "deploy:sepolia": "cd packages/contracts && forge script script/Deploy.s.sol --rpc-url sepolia --broadcast",
+    "deploy:mainnet": "cd packages/contracts && forge script script/Deploy.s.sol --rpc-url mainnet --broadcast"
+  },
+  "license": "MIT"
+}
